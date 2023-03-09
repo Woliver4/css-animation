@@ -1,0 +1,22 @@
+@keyframes animateLogo {
+    0%  {background-color: black;
+        transform: rotate(360deg)
+        border: 12px solid brown;}
+    50% {background-color: aqua;
+        border: 8px solid palevioletred;}
+    100%{background-color: blueviolet;
+        border: 5px solid blueviolet;}
+}
+
+div img{
+    height: 150px;
+    width: 150px;
+}
+
+div img:hover{
+    animation-name: animateLogo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
